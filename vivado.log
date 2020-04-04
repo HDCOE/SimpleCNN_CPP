@@ -1,0 +1,322 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec 17 12:07:11 2019
+# Process ID: 10408
+# Current directory: /home/hadee/Work/SimpleCNN_CPP
+# Command line: vivado
+# Log file: /home/hadee/Work/SimpleCNN_CPP/vivado.log
+# Journal file: /home/hadee/Work/SimpleCNN_CPP/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hadee/Work/FPGA/YOLO'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/hadee/install/xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:08 . Memory (MB): peak = 6543.957 ; gain = 149.895 ; free physical = 133 ; free virtual = 16804
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/home/hadee/install/xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_1_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L smartconnect_v1_0 -L xilinx_vip -prj design_1_wrapper_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3
+INFO: [VRFC 10-311] analyzing module clk_map_imp_5Y9LOC
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_1TZX5BB
+INFO: [VRFC 10-311] analyzing module m00_nodes_imp_1GOYQYZ
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_USCCV8
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_Y7M43I
+INFO: [VRFC 10-311] analyzing module s01_entry_pipeline_imp_1W4H5O0
+INFO: [VRFC 10-311] analyzing module s01_nodes_imp_1RW0SI0
+INFO: [VRFC 10-311] analyzing module switchboards_imp_4N4PBE
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_0/sim/bd_afc3_one_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_one_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/sim/bd_afc3_arsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_arsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/sim/bd_afc3_rsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_rsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_4/sim/bd_afc3_awsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_awsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_5/sim/bd_afc3_wsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_wsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_6/sim/bd_afc3_bsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_bsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_7/sim/bd_afc3_s00mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_s00mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_8/sim/bd_afc3_s00tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_s00tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_9/sim/bd_afc3_s00sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_s00sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_10/sim/bd_afc3_s00a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_s00a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_11/sim/bd_afc3_sarn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_sarn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_12/sim/bd_afc3_srn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_srn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_13/sim/bd_afc3_s01mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_s01mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_14/sim/bd_afc3_s01tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_s01tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_15/sim/bd_afc3_s01sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_s01sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_16/sim/bd_afc3_s01a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_s01a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_17/sim/bd_afc3_sawn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_sawn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/sim/bd_afc3_swn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_swn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_19/sim/bd_afc3_sbn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_sbn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_20/sim/bd_afc3_m00s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m00s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_21/sim/bd_afc3_m00arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m00arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_22/sim/bd_afc3_m00rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m00rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/sim/bd_afc3_m00awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m00awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_24/sim/bd_afc3_m00wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m00wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_25/sim/bd_afc3_m00bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m00bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_26/sim/bd_afc3_m00e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_afc3_m00e_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_axi_smc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_ps7_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_15SPJYW
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_XU9C55
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_UYSKKA
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ipshared/a9f8/hdl/verilog/receive.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receive
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ipshared/a9f8/hdl/verilog/receive_a.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receive_a
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ipshared/a9f8/hdl/verilog/testcompute_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testcompute_B_ram
+INFO: [VRFC 10-311] analyzing module testcompute_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ipshared/a9f8/hdl/verilog/testcompute_C.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testcompute_C_ram
+INFO: [VRFC 10-311] analyzing module testcompute_C
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ipshared/a9f8/hdl/verilog/testcompute_CRTL_BUS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testcompute_CRTL_BUS_s_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ipshared/a9f8/hdl/verilog/testcompute_hadd_16ns_16ns_16_5_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testcompute_hadd_16ns_16ns_16_5_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ipshared/a9f8/hdl/verilog/testcompute_hmul_16ns_16ns_16_4_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testcompute_hmul_16ns_16ns_16_4_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ipshared/a9f8/hdl/verilog/testcompute_srem_32ns_5ns_32_36_seq_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testcompute_srem_32ns_5ns_32_36_seq_1_div_u
+INFO: [VRFC 10-311] analyzing module testcompute_srem_32ns_5ns_32_36_seq_1_div
+INFO: [VRFC 10-311] analyzing module testcompute_srem_32ns_5ns_32_36_seq_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ipshared/a9f8/hdl/verilog/testcompute.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testcompute
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj design_1_wrapper_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_rst_ps7_0_100M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_dma_0_0/sim/design_1_axi_dma_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_dma_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/sim/bd_afc3_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_afc3_psr_aclk_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ipshared/a9f8/hdl/ip/testcompute_ap_hadd_3_full_dsp_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testcompute_ap_hadd_3_full_dsp_16'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ipshared/a9f8/hdl/ip/testcompute_ap_hmul_2_max_dsp_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testcompute_ap_hmul_2_max_dsp_16'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/ip/design_1_testcompute_0_1/sim/design_1_testcompute_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_testcompute_0_1'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sim/sim_1/behav/xsim'
+xelab -wto cbd94e5391364fda91c190aa6abc225e --incr --debug typical --relax --mt 8 -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L xil_defaultlib -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L fifo_generator_v13_2_4 -L lib_fifo_v1_0_13 -L lib_srl_fifo_v1_0_2 -L axi_datamover_v5_1_21 -L axi_sg_v4_1_12 -L axi_dma_v7_1_20 -L xlconstant_v1_1_6 -L smartconnect_v1_0 -L generic_baseblocks_v2_1_0 -L axi_register_slice_v2_1_19 -L axi_data_fifo_v2_1_18 -L axi_crossbar_v2_1_20 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L floating_point_v7_1_8 -L axi_protocol_converter_v2_1_19 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /home/hadee/install/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto cbd94e5391364fda91c190aa6abc225e --incr --debug typical --relax --mt 8 -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_5 -L processing_system7_vip_v1_0_7 -L xil_defaultlib -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L fifo_generator_v13_2_4 -L lib_fifo_v1_0_13 -L lib_srl_fifo_v1_0_2 -L axi_datamover_v5_1_21 -L axi_sg_v4_1_12 -L axi_dma_v7_1_20 -L xlconstant_v1_1_6 -L smartconnect_v1_0 -L generic_baseblocks_v2_1_0 -L axi_register_slice_v2_1_19 -L axi_data_fifo_v2_1_18 -L axi_crossbar_v2_1_20 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_15 -L floating_point_v7_1_8 -L axi_protocol_converter_v2_1_19 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <design_1_testcompute_0_0> not found while processing module instance <testcompute_0> [/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/bd/design_1/sim/design_1.v:540]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 6683.020 ; gain = 0.000 ; free physical = 174 ; free virtual = 16700
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+open_bd_design {/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:hls:testcompute:1.0 - testcompute_0
+Successfully read diagram <design_1> from BD file </home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 6688.152 ; gain = 5.133 ; free physical = 137 ; free virtual = 16607
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/hadee/Work/FPGA/YOLO/YoloHLS/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hadee/Work/FPGA/YOLO'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:testcompute:1.0 [get_ips  design_1_testcompute_0_1] -log ip_upgrade.log
+Upgrading '/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_testcompute_0_1 (Testcompute 1.0) from revision 1911281604 to revision 1912171218
+Wrote  : </home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/hadee/Work/FPGA/customAXI_16bit/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_testcompute_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Wrote  : </home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+Exporting to file /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-519] IP 'design_1_testcompute_0_1' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block testcompute_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 7058.258 ; gain = 248.402 ; free physical = 124 ; free virtual = 15944
+catch { config_ip_cache -export [get_ips -all design_1_testcompute_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = c7981aa4510def98; cache size = 49.243 MB.
+export_ip_user_files -of_objects [get_files /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 6 design_1_testcompute_0_1_synth_1
+[Tue Dec 17 12:19:18 2019] Launched design_1_testcompute_0_1_synth_1...
+Run output will be captured here: /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.runs/design_1_testcompute_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/sim_scripts -ip_user_files_dir /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files -ipstatic_source_dir /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/modelsim} {questa=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/questa} {ies=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/ies} {xcelium=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/xcelium} {vcs=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/vcs} {riviera=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+validate_bd_design -force
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+validate_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 7215.332 ; gain = 0.000 ; free physical = 129 ; free virtual = 15330
+save_bd_design
+Wrote  : </home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : </home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+Exporting to file /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block testcompute_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = c7981aa4510def98; cache size = 49.243 MB.
+[Tue Dec 17 12:20:04 2019] Launched design_1_testcompute_0_1_synth_1, synth_1...
+Run output will be captured here:
+design_1_testcompute_0_1_synth_1: /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.runs/design_1_testcompute_0_1_synth_1/runme.log
+synth_1: /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.runs/synth_1/runme.log
+[Tue Dec 17 12:20:04 2019] Launched impl_1...
+Run output will be captured here: /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 7343.395 ; gain = 0.000 ; free physical = 791 ; free virtual = 15842
+report_ip_status -name ip_status 
+file copy -force /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.runs/impl_1/design_1_wrapper.sysdef /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sdk -hwspec /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sdk -hwspec /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/hadee/Work/FPGA/YOLO/YoloHLS/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/hadee/Work/FPGA/YOLO'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:testcompute:1.0 [get_ips  design_1_testcompute_0_1] -log ip_upgrade.log
+Upgrading '/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_testcompute_0_1 (Testcompute 1.0) from revision 1912171218 to revision 1912171234
+Wrote  : </home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/hadee/Work/FPGA/customAXI_16bit/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_testcompute_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Wrote  : </home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+Exporting to file /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Block Design Tcl file /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0_bd.tcl
+Generated Hardware Definition File /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block testcompute_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 7343.395 ; gain = 0.000 ; free physical = 160 ; free virtual = 14885
+catch { config_ip_cache -export [get_ips -all design_1_testcompute_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = c7981aa4510def98; cache size = 54.264 MB.
+export_ip_user_files -of_objects [get_files /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 6 design_1_testcompute_0_1_synth_1
+[Tue Dec 17 12:35:23 2019] Launched design_1_testcompute_0_1_synth_1...
+Run output will be captured here: /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.runs/design_1_testcompute_0_1_synth_1/runme.log
+export_simulation -of_objects [get_files /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/sim_scripts -ip_user_files_dir /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files -ipstatic_source_dir /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/modelsim} {questa=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/questa} {ies=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/ies} {xcelium=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/xcelium} {vcs=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/vcs} {riviera=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec 17 12:35:44 2019] Launched design_1_testcompute_0_1_synth_1, synth_1...
+Run output will be captured here:
+design_1_testcompute_0_1_synth_1: /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.runs/design_1_testcompute_0_1_synth_1/runme.log
+synth_1: /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.runs/synth_1/runme.log
+[Tue Dec 17 12:35:44 2019] Launched impl_1...
+Run output will be captured here: /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.runs/impl_1/runme.log
+file copy -force /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.runs/impl_1/design_1_wrapper.sysdef /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sdk/design_1_wrapper.hdf
+
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+Wrote  : </home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 19:26:32 2019...

@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec 17 12:07:11 2019
+# Process ID: 10408
+# Current directory: /home/hadee/Work/SimpleCNN_CPP
+# Command line: vivado
+# Log file: /home/hadee/Work/SimpleCNN_CPP/vivado.log
+# Journal file: /home/hadee/Work/SimpleCNN_CPP/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_bd_design {/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:testcompute:1.0 [get_ips  design_1_testcompute_0_1] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_testcompute_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_testcompute_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 6 design_1_testcompute_0_1_synth_1
+export_simulation -of_objects [get_files /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/sim_scripts -ip_user_files_dir /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files -ipstatic_source_dir /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/modelsim} {questa=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/questa} {ies=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/ies} {xcelium=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/xcelium} {vcs=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/vcs} {riviera=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+validate_bd_design -force
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+report_ip_status -name ip_status 
+file copy -force /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.runs/impl_1/design_1_wrapper.sysdef /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sdk -hwspec /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sdk/design_1_wrapper.hdf
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:testcompute:1.0 [get_ips  design_1_testcompute_0_1] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_testcompute_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_testcompute_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+export_ip_user_files -of_objects [get_files /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 6 design_1_testcompute_0_1_synth_1
+export_simulation -of_objects [get_files /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/sim_scripts -ip_user_files_dir /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files -ipstatic_source_dir /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/modelsim} {questa=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/questa} {ies=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/ies} {xcelium=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/xcelium} {vcs=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/vcs} {riviera=/home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+file copy -force /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.runs/impl_1/design_1_wrapper.sysdef /home/hadee/Work/FPGA/customAXI_16bit/customAXI_16bit.sdk/design_1_wrapper.hdf
+
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
